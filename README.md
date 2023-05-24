@@ -2,6 +2,21 @@
 
 [Open-digger 官网链接](http://www.x-lab.info/open-digger/#/zh-cn/)
 
+## 0 安装方法
+Windows:
+```bash
+pip install wheel
+python setup.py bdist_wheel
+pip install dist/digger_helper-1.0-....whl    # 具体文件名
+```
+
+Linux:
+```bash
+pip3 install wheel
+python3 setup.py bdist_wheel
+pip install dist/*.whl
+```
+
 ## 1 使用说明
 
 ### 1.1 指标查询
