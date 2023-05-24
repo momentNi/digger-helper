@@ -1,1 +1,1 @@
-# opendigger
+# Digger-helper
