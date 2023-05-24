@@ -35,11 +35,8 @@ setup(
     name=PROJECT_NAME,
     version=__version__,
     description='Open-digger helper',
-    author='Chunyu Lu, Shunjie Ni, Weiyi Lu',
-    # author_email='',
-    # Contained modules and scripts.
+    author='Shunjie Ni',
     packages=find_packages(),
-    # package_data={'sieis': ['utils/defaults.yaml', 'tools/template.conf']},
     include_package_data=True,
     install_requires=REQUIRED_PACKAGES,
     zip_safe=False,
