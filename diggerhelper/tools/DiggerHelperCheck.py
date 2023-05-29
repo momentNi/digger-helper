@@ -19,12 +19,24 @@ class DiggerHelperCheck:
         else:
             raise ValueError(f"Invalid time format: {time}. Time format should be YYYY-MM.")
 
+    def network_check(self, metric, time):
+        network_metrics = []
+        # 网络指标是没有时间的
+        with open('diggerhelper/tools/network.csv', 'r') as file:
+            for line in file:
+                metrics = line.strip().split(',')
+                network_metrics.extend(metrics)
+        if metric in network_metrics and time != '*':
+            raise ValueError(f"Network has not time.just nodes & edges.")
+        
+
     def run(self, metric, time):
         self.valid_metrics = self.load_valid_metrics()
 
         try:
             checked_metric = self.check_metric(metric)
             checked_time = self.check_time(time)
+            self.network_check(metric, time)
             return checked_metric, checked_time
             # print(f"Valid metric: {checked_metric}")
             # print(f"Valid time: {checked_time}")
