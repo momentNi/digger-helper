@@ -41,6 +41,7 @@ python -m diggerhelper query repo
 ```bash
 python -m diggerhelper query repo --name aaa --metric OpenRank --time 2023-05
 ```
+如果metric包含空格，例如Active dates and times，你需要通过双/单引号来括起来，"Active dates and times"
 
 #### 1.1.2 用户指标查询
 
