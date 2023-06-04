@@ -44,6 +44,15 @@ class DiggerHelperCheck:
             print(str(e))
             sys.exit(1)
 
+    def check_filetype(self, file_type, filename):
+        point_index = filename.rindex('.')
+        file_format = filename[point_index + 1 :]
+        type_list = ['json', 'txt']
+        if(file_type in type_list and file_type == file_format):
+            return True
+        else:
+            raise ValueError(f"The format is illegal")
+
     def load_valid_metrics(self):
         valid_metrics = []
         with open('diggerhelper/tools/metric.csv', 'r') as file:

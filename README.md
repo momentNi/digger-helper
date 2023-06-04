@@ -85,7 +85,7 @@ python -m diggerhelper export download
 | -n NAME, --name NAME    | The name of the repository      |
 | --metric METRIC         | The metric of query             |
 | --time TIME (Optional)  | Category result based on time   |
-| --type json/pdf/jpg/png | The type of output file         |
+| --type json/txt | The type of output file         |
 | -o PATH, --output PATH  | The path of output file         |
 
 完整举例：
@@ -111,6 +111,7 @@ python -m diggerhelper export web
 | -n NAME, --name NAME    | The name of the repository      |
 | --metric METRIC         | The metric of query             |
 | --time TIME (Optional)  | Category result based on time   |
+| -o Path, --output Path  | The Path of output file   |
 
 完整举例：
 

@@ -24,7 +24,10 @@ def setup_export_parser(parser_export: ArgumentParser):
     parser_export_file.add_argument("-n", "--name", metavar="NAME", required=True, help="The name of the repo/user")
     parser_export_file.add_argument("--metric", metavar="METRIC", required=True, help="The metric of query")
     parser_export_file.add_argument("--time", metavar="TIME", default="*", help="Category result based on time")
-    parser_export_file.add_argument("--type", metavar="json/pdf/jpg/png", default="json", choices=['json', 'pdf', 'jpg', 'png'], help="The type of output file")
+    # parser_export_file.add_argument("--type", metavar="json/txt", default="json", choices=['json', 'pdf', 'jpg', 'png'], help="The type of output file")
+    parser_export_file.add_argument("--type", metavar="json/txt", default="json", choices=['json', 'txt'],
+                                    help="The type of output file")
+
     parser_export_file.add_argument("-o", "--output", metavar="PATH", default="./", help="The path of output file")
     parser_export_file.set_defaults(func=Export.download)
 
@@ -34,6 +37,7 @@ def setup_export_parser(parser_export: ArgumentParser):
     parser_export_file.add_argument("-n", "--name", metavar="NAME", required=True, help="The name of the repo/user")
     parser_export_file.add_argument("--metric", metavar="METRIC", required=True, help="The metric of query")
     parser_export_file.add_argument("--time", metavar="TIME", default="*", help="Category result based on time")
+    parser_export_file.add_argument("-o", "--output", metavar="PATH", default="./", help="The path of output file")
     parser_export_file.set_defaults(func=Export.web)
 
 
