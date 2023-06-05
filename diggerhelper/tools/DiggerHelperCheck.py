@@ -53,6 +53,14 @@ class DiggerHelperCheck:
         else:
             raise ValueError(f"The format is illegal")
 
+    def check_html(self, filename):
+        point_index = filename.rindex('.')
+        file_format = filename[point_index + 1:]
+        if(file_format == 'html'):
+            return True
+        else:
+            raise ValueError(f"The format is illegal")
+
     def load_valid_metrics(self):
         valid_metrics = []
         with open('diggerhelper/tools/metric.csv', 'r') as file:
