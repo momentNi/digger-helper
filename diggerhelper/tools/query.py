@@ -29,7 +29,7 @@ class Query(object):
             else :
                 print(metric_name + ":" + str(data))
         else:
-            print("Failed to retrieve data from URL")
+            print("Failed to retrieve data from URL.Please check if your command is correct, such as --name")
 
 
     @staticmethod
@@ -60,5 +60,5 @@ class Query(object):
             else :
                 print(data)
         else:
-            print("Failed to retrieve data from URL")
+            print("Failed to retrieve data from URL.Please check if your command is correct, such as --name")
 

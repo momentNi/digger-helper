@@ -39,7 +39,7 @@ python -m diggerhelper query repo
 完整举例：
 
 ```bash
-python -m diggerhelper query repo --name aaa --metric OpenRank --time 2023-05
+python -m diggerhelper query repo --name tyn1998 --metric OpenRank --time 2023-05
 ```
 如果metric包含空格，例如Active dates and times，你需要通过双/单引号来括起来，"Active dates and times"
 
@@ -63,7 +63,7 @@ python -m diggerhelper query user
 完整举例：
 
 ```bash
-python -m diggerhelper query user --name aaa --metric OpenRank
+python -m diggerhelper query user --name tyn1998 --metric OpenRank
 ```
 
 ### 1.2 指标导出
@@ -91,7 +91,7 @@ python -m diggerhelper export download
 完整举例：
 
 ```bash
-python -m diggerhelper export download --query repo --name aaa --metric OpenRank --time 2023-05 --type json -o ./result.json
+python -m diggerhelper export download --query repo --name tyn1998 --metric OpenRank --time 2023-05 --type json -o ./result.json
 ```
 
 #### 1.2.2 网页导出
@@ -116,5 +116,5 @@ python -m diggerhelper export web
 完整举例：
 
 ```bash
-python -m diggerhelper export web --query user --name aaa --metric OpenRank
+python -m diggerhelper export web --query user --name tyn1998 --metric OpenRank -o ./result.html
 ```

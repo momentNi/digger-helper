@@ -34,7 +34,7 @@ class Export(object):
             with open(output, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
         else:
-            print("Failed to download data from URL")
+            print("Failed to download data from URL.Please check if your command is correct, such as --name")
 
 
     @staticmethod
@@ -67,4 +67,4 @@ class Export(object):
                 f.write(data_html)
                 f.close()
         else:
-            print("Failed to download data from URL")
+            print("Failed to download data from URL.Please check if your command is correct, such as --name")

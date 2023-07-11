@@ -51,7 +51,9 @@ class DiggerHelperCheck:
         if(file_type in type_list and file_type == file_format):
             return True
         else:
-            raise ValueError(f"The format is illegal")
+            # raise ValueError(f"The format is illegal")
+            print(f"The file format is illegal.It should be json/txt.")
+            sys.exit(1)
 
     def check_html(self, filename):
         point_index = filename.rindex('.')
@@ -59,7 +61,9 @@ class DiggerHelperCheck:
         if(file_format == 'html'):
             return True
         else:
-            raise ValueError(f"The format is illegal")
+            print(f"The file format is illegal.It should be html.")
+            sys.exit(1)
+            # raise ValueError(f"The format is illegal")
 
     def load_valid_metrics(self):
         valid_metrics = []
