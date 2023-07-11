@@ -11,6 +11,8 @@ from setuptools.command.install import install
 
 __version__ = '1.0'
 REQUIRED_PACKAGES = [
+    'requests',
+    'json2html',
 ]
 PROJECT_NAME = 'digger-helper'
 
