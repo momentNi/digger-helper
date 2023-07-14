@@ -10,7 +10,7 @@ python setup.py bdist_wheel
 pip install dist/digger_helper-1.0-....whl    # 具体文件名
 ```
 
-Linux:
+Linux (Python 3):
 ```bash
 pip3 install wheel
 python3 setup.py bdist_wheel
