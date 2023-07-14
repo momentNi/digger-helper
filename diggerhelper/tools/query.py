@@ -45,7 +45,6 @@ class Query(object):
         metric_name, month = helper.run(metric_name, month)
         # 拼接url
         url = "https://oss.x-lab.info/open_digger/github/" + user_name + "/" + metric_name + ".json"
-        print(url)
         # 发送请求
         response = requests.get(url)
         if response.status_code == 200:
