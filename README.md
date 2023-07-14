@@ -39,7 +39,7 @@ python -m diggerhelper query repo
 完整举例：
 
 ```bash
-python -m diggerhelper query repo --name tyn1998 --metric OpenRank --time 2023-05
+python -m diggerhelper query repo --name X-lab2017/oss101 --metric OpenRank --time 2023-05
 ```
 如果metric包含空格，例如Active dates and times，你需要通过双/单引号来括起来，"Active dates and times"
 
